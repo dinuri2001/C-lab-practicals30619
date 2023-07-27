@@ -1,0 +1,21 @@
+#include <stdio.h>
+   int main() {
+    
+    printf("%d %d %d\n",2,4,8);
+    printf("%d %d %d\n",3,9,27);
+    printf("%d %d %d\n",4,16,64);
+    printf("%d %d %d\n",5,25,125);
+    
+    
+       
+        
+    
+    
+
+        
+    
+    
+    
+
+    return 0;
+}
