@@ -1,0 +1,30 @@
+#include <stdio.h>
+int main(){
+    int i, numarr[10] ,ncount=0,pcount=0,zcount=0;
+    for (i=0; i<10;i++){
+    printf("Enter an integer:",i+1);
+    scanf("%d",&numarr[i]);
+    }
+    
+    for (i=1;i<=10;i++)
+    {
+        if (numarr[i]<0)
+        ncount++;
+        
+          else if (numarr[i]>0)
+         pcount++;
+         
+          else 
+         zcount++;
+         
+         
+    }
+     printf("The no.of positive numbers entered are %d",pcount);
+        
+    printf("The no.of negative numbers entered are %d",ncount);
+    printf("The no.of zero's entered are %d",zcount);
+    
+return 0;
+}
+
+
