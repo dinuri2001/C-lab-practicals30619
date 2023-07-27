@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main() {
+    char empname[10];
+    float bs,ns,inc;
+    //input
+    printf("Enter the employee name:");
+    scanf("%s",&empname);
+    printf("Enter the  basic salary:");
+    scanf("%f",&bs); 
+    //process
+    if (bs>=10000)
+    inc=bs*0.15;
+    else if (bs>=5000)
+    inc=bs*0.10;
+    else
+    inc=bs*0.05;
+    ns=bs+inc;
+    //output
+    printf("employee name is %s\n",empname);
+    printf("new salary is %.2f \n",ns);
+    
+
+    return 0;
