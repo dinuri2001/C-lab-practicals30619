@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main(){
+    int orignum,r,num,result=0;
+    printf("Enter a three digits number:");
+    scanf("%d",&orignum);
+    num=orignum;
+    do {
+        r=orignum%10;
+        result=result+r*r*r;
+        orignum=orignum/10;
+    }while (orignum!=0);
+    
+if (result=num)
+printf("%d is an armstrong number",num);
+else
+printf("%d is not an armstrong number",num);
+
+return 0;
+}
