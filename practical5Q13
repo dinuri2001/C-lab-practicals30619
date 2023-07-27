@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main(){
+    int i, numarr[10];
+    for (i=0; i<10;i++){
+    printf("Enter an integer:",i+1);
+    scanf("%d",&numarr[i]);}
+    for (i=0;i<=10;i++)
+    {
+        printf("%d \n",numarr[i]);
+    }
+    
+        
+    
+    
+return 0;
+}
+
