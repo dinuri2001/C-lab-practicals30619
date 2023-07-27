@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    int m,total=0,avg,marks[10];
+    for(m=1;m<=10;m++)
+    {
+        printf("Enter the marks: \n",m+1);
+        scanf("%d",&marks[m]);  }
+        
+     for (m=1;m<=10;m++)   
+        total=total+marks[m];
+        printf("The total marks is %d \n",total);
+        avg=total/10;
+        printf("The average of marks is %d \n",avg);
+    if (avg>=50)
+        printf("Pass ");
+    
+    else if (avg<50)
+    
+        printf("Fail");
+
+      
+      }
+    
