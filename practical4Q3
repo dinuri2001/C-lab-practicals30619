@@ -1,0 +1,33 @@
+#include <stdio.h>
+int main() {
+    float r1,r2,pi=22/7;
+     int opt;
+    printf("Enter the radius of the circle: ");
+    scanf("%f",&r1);
+    printf("Enter the radius of the sphere:");
+    scanf("%f",&r2);
+    
+    
+    printf("1-circumference of the circle\n 2-Area of the circle\n 3-volume of the sphere\n 4-Exit\n");
+    printf("Enter your option:\n");
+   scanf("%d",&opt);
+    switch(opt) 
+    {
+        case 1:
+            printf("The circumference of circle is: %f\n",r1*pi*2.0);
+        break;
+            
+        case 2:
+            printf(" The area of the circle is:%f\n",r1*r1*pi);
+            break;
+        case 3:
+        printf("The volume of sphere is: %f \n",r2*r2*r2*pi*4/3);
+        break;
+        
+        
+        case 4:
+        break;
+        default: printf("Input correct option:\n");
+    }
+    return 0;
+}
