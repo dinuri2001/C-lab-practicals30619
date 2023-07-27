@@ -1,0 +1,37 @@
+#include <stdio.h> 
+int main() {
+    int num1,num2,opt;
+     
+    printf("Enter first integer: ");
+    scanf("%d",&num1);
+    printf("Enter second integer:");
+    scanf("%d",&num2);
+    
+    
+    printf("1-Addition\n 2-Subtraction\n 3-Multiplication\n 4-Division\n 5-Exit\n");
+    printf("Enter your option:\n");
+   scanf("%d",&opt);
+    switch(opt) 
+    {
+        case 1:
+            printf("The Addition of  %d and %d is: %d\n",num1,num2,num1+num2);
+        break;
+            
+        case 2:
+            printf(" The subtraction of %d and %d is:%d\n",num1,num2,num1-num2);
+            break;
+        case 3:
+        printf("The Multiplication of %d and %d is: %d \n",num1,num2,num1*num2);
+        break;
+        
+        case 4:
+        if (num2==0)
+        printf("The second number is zero");
+        else
+        printf("The division of %d and%d is:%d \n",num1,num2,num1/num2);
+        case 5:
+        break;
+        default: printf("Input correct option:\n");
+    }
+    return 0;
+}
