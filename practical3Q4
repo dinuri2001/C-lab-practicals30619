@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main() {
+    
+    float r,d,c,a,pi=3.14159;
+    //input
+    printf("Enter the value of the radius");
+    scanf("%f",&r);
+    //process
+    d=r*2;
+    printf("The diameter %f\n",d);
+    c=r*pi*2;
+    printf("The circumference %f\n",c);
+    a=pi*r*r;
+    printf("The area %f\n",a);
+
+    return 0;
