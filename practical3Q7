@@ -1,0 +1,36 @@
+#include <stdio.h>
+int main() {
+    
+    float bsalary,addallowance=0,bonus,monthlySales,grossRemuneration;
+    char city;
+    int years;
+    //input
+    printf("Enter  basic salary:");
+    scanf("%f",&bsalary);
+    printf ("enter the number of years of service: \n");
+    scanf("%d",&years);
+    printf("Enter the city ('C'if colombo,'O' for other cities): \n");
+    scanf("%c",&city);
+    printf("Enter the monthly sales: \n");
+    scanf("%f",&monthlySales);
+    //process
+    if (years>5){
+        addallowance==0.1*bsalary;
+    }
+    if (city== 'C'){
+        addallowance+=2500;
+    }
+    if(monthlySales>=0 && monthlySales <=25000){
+        bonus=0.1*monthlySales;
+    }
+    else if (monthlySales >25000 && monthlySales<=50000) {
+        bonus=0.12*monthlySales;
+    }
+    else if (monthlySales>50000){
+        bonus=0.15*monthlySales;
+    }
+    grossRemuneration=bsalary+addallowance+bonus;
+    
+    printf("\n Gross Monthly Remuneration: %.2f\n",grossRemuneration);
+    return 0;
+}
